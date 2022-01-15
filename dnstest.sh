@@ -8,21 +8,24 @@ command -v bc > /dev/null || { echo "bc was not found. Please install bc."; exit
 NAMESERVERS=`cat /etc/resolv.conf | grep ^nameserver | cut -d " " -f 2 | sed 's/\(.*\)/&#&/'`
 
 PROVIDERS="
-1.1.1.1#cloudflare
-8.8.4.4#google
+8.8.8.8#google_8888
+8.8.4.4#google_8844
 9.9.9.9#quad9
+1.1.1.1#cloudflare_1111
+1.0.0.1#cloudflare_1001
 209.244.0.3#level3
+208.67.222.222#ciscoumbrella
 208.67.222.222#opendns
 8.26.56.26#comodo
-185.228.168.168#cleanbrowsing
 199.85.126.20#norton
-77.88.8.7#yandex
-80.80.80.80#freenom
 176.103.130.130#adguard
+185.228.168.168#cleanbrowsing
+80.80.80.80#freenom
+77.88.8.7#yandex
 "
 
 # Domains to test. Duplicated domains are ok
-DOMAINS2TEST="www.google.com wl.primeraplus.com.mx outlook.office.com amazon.com whatsapp.com www.oracle.com gfa-smartit.onbmc.com wikipedia.org twitter.com"
+DOMAINS2TEST="www.google.com wl.primeraplus.com.mx outlook.office.com whatsapp.com www.oracle.com gfa-smartit.onbmc.com banorte.com www.conectagfa.com.mx twitter.com"
 
 
 totaldomains=0

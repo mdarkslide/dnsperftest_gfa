@@ -11,31 +11,50 @@
 
 
 ## Introducción
-> Shell script to test the performance of the most popular DNS resolvers from your location.
+> El script prueba el desempeño de los DNS publicos mas populares desde la ubicación del equipo donde se ejecuta el script.
 
 Includes by default:
- * CloudFlare 1.1.1.1
+
+ * Google DNS 8.8.8.8
  * Google DNS 8.8.4.4
  * Quad9 9.9.9.9
+ * CloudFlare 1.1.1.1
+ * CloudFlare 1.0.0.1
  * Level3 209.244.0.3
+ * Cisco Umbrella 208.67.222.222
  * Open DNS 208.67.222.222
  * Comodo Secure DNS 8.26.56.26
- * CleanBrowsing 185.228.168.168
  * Norton DNS 199.85.126.20
- * Yandex 77.88.8.7
- * Frenoom DNS 80.80.80.80
  * AdGuard DNS 176.103.130.130
+ * CleanBrowsing 185.228.168.168
+ * Frenoom DNS 80.80.80.80
+ * Yandex 77.88.8.7
 
+> Se seleccionaron los siguientes sitios para las pruebas de DNS.
+
+Sitios de prueba:
+
+1. www.google.com 
+2. wl.primeraplus.com.mx
+3. outlook.office.com
+4. whatsapp.com
+5. www.oracle.com
+6. gfa-smartit.onbmc.com
+7. banorte.com
+8. www.conectagfa.com.mx
+9. twitter.com
 
 # Required 
 
-You need to install bc and dig for Ubuntu:
+Es necesario instalar *bc* and *dig* para Ubuntu:
 
 ```
  $ sudo apt-get install bc dnsutils
 ```
 
 # Utilization
+
+La primera vez es necesario clonar el repositorio desde git. Posteriormente basta con posicionarse en la ruta donde se descargo el proyecto y ejecutar el archivo **dnstest.sh**
 
 ``` 
  $ git clone --depth=1 https://github.com/mdarkslide/dnsperftest_gfa.git
