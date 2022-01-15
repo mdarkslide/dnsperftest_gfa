@@ -25,7 +25,7 @@ PROVIDERS="
 "
 
 # Domains to test. Duplicated domains are ok
-DOMAINS2TEST="www.google.com wl.primeraplus.com.mx outlook.office.com whatsapp.com www.oracle.com gfa-smartit.onbmc.com banorte.com www.conectagfa.com.mx twitter.com"
+DOMAINS2TEST="www.google.com www.primeraplus.com.mx www.office.com web.whatsapp.com www.oracle.com www.banorte.com www.conectagfa.com.mx gfa-smartit.onbmc.com www.twitter.com"
 
 
 totaldomains=0

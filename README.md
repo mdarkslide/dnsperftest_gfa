@@ -11,9 +11,9 @@
 
 
 ## Introducción
-> El script prueba el desempeño de los DNS publicos mas populares desde la ubicación del equipo donde se ejecuta el script.
+> El script prueba el desempeño de los DNS públicos más populares desde la ubicación del equipo donde se ejecuta el script.
 
-Includes by default:
+Servidores de DNS públicos seleccionados para la prueba:
 
  * Google DNS 8.8.8.8
  * Google DNS 8.8.4.4
@@ -35,16 +35,16 @@ Includes by default:
 Sitios de prueba:
 
 1. www.google.com 
-2. wl.primeraplus.com.mx
-3. outlook.office.com
-4. whatsapp.com
+2. www.primeraplus.com.mx
+3. www.office.com
+4. web.whatsapp.com
 5. www.oracle.com
-6. gfa-smartit.onbmc.com
-7. banorte.com
-8. www.conectagfa.com.mx
-9. twitter.com
+6. www.banorte.com
+7. www.conectagfa.com.mx
+8. gfa-smartit.onbmc.com
+9. www.twitter.com
 
-# Required 
+# Requisitos previos 
 
 Es necesario instalar *bc* and *dig* para Ubuntu:
 
@@ -52,9 +52,9 @@ Es necesario instalar *bc* and *dig* para Ubuntu:
  $ sudo apt-get install bc dnsutils
 ```
 
-# Utilization
+# Utilización
 
-La primera vez es necesario clonar el repositorio desde git. Posteriormente basta con posicionarse en la ruta donde se descargo el proyecto y ejecutar el archivo **dnstest.sh**
+La primera vez es necesario clonar el repositorio desde git. Posteriormente basta con posicionarse en la ruta donde se descargó el proyecto y ejecutar el archivo **dnstest.sh**
 
 ``` 
  $ git clone --depth=1 https://github.com/mdarkslide/dnsperftest_gfa.git
